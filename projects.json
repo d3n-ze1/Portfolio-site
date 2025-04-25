@@ -1,0 +1,17 @@
+[
+    {
+      "title": "Blender Render Utilities - A Blender addon",
+      "description": "A Blender addon that provides quick access to resolution presets for different screen ratios and platforms. This tool simplifies setting up render resolutions for social media content, filmmaking, and custom aspect ratios, making it easier for creators to maintain consistency across various formats.",
+      "shortDescription": "A Blender addon that provides a quick and easy way to set render resolution presets for different screen ratios.",
+      "tags": ["Python", "Blender", "Blender Addon"],
+      "image": "imgs/blenderrender.png",
+      "link": "https://github.com/d3n-ze1/blender-render-utils"
+    },
+    {
+      "title": "Portfolio Site",
+      "description": "A static page that showcases my latest projects. Built using HTML, CSS, and JavaScript.",
+      "tags": ["JavaScript", "CSS", "HTML"],
+      "image": "imgs/ilya-pavlov-OqtafYT5kTw-unsplash.jpg",
+      "link": "https://github.com/d3n-ze1/Portfolio-site"
+    }
+  ]

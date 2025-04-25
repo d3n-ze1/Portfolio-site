@@ -1,3 +1,20 @@
+:root{
+    --text: #130b07;
+    --alt-text: #f8f0ec;
+    --background: #e9e1dd;
+    --items: #f1d9cb;
+    --primary: #ae4513;
+    --secondary: #efac8b;
+    --accent: #d36f3e;
+
+    /*Dark Mode*/
+    --dark-text: #f8f0ec;
+    --dark-background: #100905;
+    --dark-primary: #ec8251;
+    --dark-secondary: #753210;
+    --dark-accent: #bf5d2b;
+}
+
 @keyframes flash {
     0% { opacity: 1; }
     50% { opacity: 0.2; }
@@ -7,7 +24,7 @@
 body {
     height: 100%;
     width: 100%;
-    background-color: rgb(217, 219, 227);
+    background-color: var(--background);
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -23,7 +40,7 @@ main{
     grid-template-columns: 2fr 1fr;
     margin: 0;
     padding: 10px;
-    background-color: antiquewhite;
+    background-color: var(--primary);
 }
 
 .navigation{
@@ -45,7 +62,7 @@ main{
 }
 
 .nav-links a {
-    color: white;
+    color: var(--alt-text);
     padding: 8px 12px;
     transition: 0.3s;
     font-size: 1.2em;
@@ -69,21 +86,22 @@ main{
     animation: flash 0.5s linear infinite;
 }
 
-.header-title{
-    background-color: azure;
+.header-title-container{
+    background-color: var(--accent);
     padding-left: 10px;
     padding-right: 30px;
 }
 
 .header-title-text{
     text-decoration: none;
-    color: rgb(180, 134, 142);
+    color: var(--alt-text);
     font-size: 1em;
 
 }
 
 #main-head-text{
     font-size: 2em;
+    margin: 50px 0px;
 }
 
 /* hompage */
@@ -92,11 +110,12 @@ main{
     display: grid;
     grid-template-columns: auto auto;
     gap: 20px;
-    margin: 20px;
+    margin:  80px 20px 0px;
     padding: 10px;
     align-items: center;
     justify-items: center;
-    background-color: antiquewhite;
+    background-color: var(--primary);
+    color: var(--alt-text);
     overflow: auto;
 }
 
@@ -109,7 +128,7 @@ main{
 }
 
 #headshot{
-    border: 5px solid brown;
+    border: 5px solid var(--accent);
     margin: 20px;
     width: 300px;
 }
@@ -117,24 +136,30 @@ main{
 /* Projects Section */
 #projects {
     padding: 40px;
-    background-color: #f4f4f4;
-    /* text-align: center; */
+    /* background-color: var(--items); */
     overflow: auto;
 }
 
-.project-grid {
+#project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .project-item {
-    background-color: #ffffff;
+    display: grid;
+    grid-template-rows: 2fr auto;
+    background-color: var(--items);
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-item a {
+    text-decoration: none;
+    color: var(--text);
 }
 
 .project-item:hover {
@@ -149,7 +174,7 @@ main{
 }
 
 
-.projects {
+#project-container {
     padding: 50px;
     text-align: left;
     display: flex;
@@ -157,7 +182,7 @@ main{
     gap: 20px;
 }
 
-.projects h2 {
+#project-container h2 {
     font-size: 2rem;
     font-weight: bold;
 }
@@ -167,12 +192,12 @@ main{
     
     align-items: center;
     justify-content: space-between;
-    background: #1a1a2e; 
+    background: var(--dark-secondary); 
     padding: 20px;
     border-radius: 10px;
     gap: 20px;
     margin-top: 20px;
-    color: antiquewhite;
+    color: var(--alt-text);
 }
 
 .project-image {
@@ -209,13 +234,12 @@ main{
 .tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
 }
 
 .tags span {
     display: inline-block;
-    background: #0044cc;
-    color: white;
+    background: var(--accent);
+    color: var(--text);
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 0.9rem;
@@ -224,8 +248,8 @@ main{
 
 .view-code {
     display: inline-block;
-    background: #007bff;
-    color: white;
+    background: var(--items);
+    color: var(--text);
     padding: 10px 15px;
     border-radius: 5px;
     text-decoration: none;
@@ -233,7 +257,7 @@ main{
 }
 
 .view-code:hover {
-    background: #0056b3;
+    background: var(--accent);
 }
 
 #search-bar {
@@ -241,20 +265,19 @@ main{
     max-width: 475px;
     padding: 10px;
     margin-bottom: 20px;
-    border: 3px solid #77a4d4;
+    border: 3px solid var(--accent);
     border-radius: 5px;
-    box-shadow: 5px 8px 15px rgb(101, 101, 199);
+    box-shadow: 5px 8px 15px var(--accent);
     font-size: 1rem;
-    background: #1a1a2e;
-    color: white;
+    background: var(--items);
+    color: var(--text);
     position: sticky;
     top: 20px;
 }
 
 .skill-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr 1fr));
-    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr 1fr)); */
     padding: 2rem;
     max-width: 1200px;
     margin: 0 auto;
@@ -265,21 +288,25 @@ main{
     grid-template-columns: 1fr;
     justify-items: left;
     justify-content: space-between;
-    background-color: #1a1a2e; 
+    background-color: var(--dark-secondary); 
     border-radius: 10px;
-    color: antiquewhite;
+    color: var(--alt-text);
     margin: 20px;
     padding: 1rem;
-    box-shadow: 0px 0px 5px rgb(15, 15, 15);
+    box-shadow: 0px 0px 5px var(--dark-background);
 
 }
 
+
 /* Footer */
 footer {
-    background-color: #004c6d;
-    color: white;
+    /* display: flex; */
+    justify-content: center;
+    background-color: var(--primary);
+    color: var(--alt-text);
     padding: 20px;
     text-align: center;
+    margin: 0;
 }
 
 footer ul {
@@ -287,15 +314,19 @@ footer ul {
     justify-content: center;
     gap: 20px;
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 footer a {
-    color: white;
+    color: var(--alt-text);
     font-size: 18px;
+    padding: 0;
+    margin: 0;
 }
 
 footer a:hover {
-    color: #00b5e2;
+    color: var(--dark-secondary);
 }
 
 
@@ -361,6 +392,7 @@ footer a:hover {
         flex-direction: column;
         text-align: center;
         overflow: auto;
+        padding: 40px 70px;
     }
     
     .project-image {
@@ -372,8 +404,14 @@ footer a:hover {
         width: 100%;
     }
 
+    .project .tags{
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
 
-    .projects{
+
+    #project-container{
         align-items: center;
     }
 
