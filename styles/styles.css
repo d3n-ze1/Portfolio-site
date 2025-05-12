@@ -207,18 +207,18 @@ main{
     color: light-dark(var(--light-alt-text), var(--dark-alt-text));
 }
 
-.project-image {
+.project-image-container {
     flex: 1;
     max-width: 300px;
     min-height: 180px;
-    background: #2e2e3e; /* Placeholder bg */
+    background: #e2e2ec; /* Placeholder bg */
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.project-image img {
+.project-image{
     width: 100%;
     height: auto;
     border-radius: 10px;
