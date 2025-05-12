@@ -20,67 +20,49 @@ function filterProjects() {
     });
 }
 
-fetch('projects.json')
-  .then(response => {
-    if (!response.ok) throw new Error("Failed to load JSON");
-    return response.json();
-  })
-  .then(data => {
-    const container = document.getElementById('project-container');
-    data.forEach(project => {
-      const tags = project.tags.map(tag => `<span>${tag}</span>`).join(" ");
-      const projectHTML = `
-        <div class="project">
+function loadProjects(jsonPath, containerId, isHome = false) {
+  fetch(jsonPath)
+    .then(response => {
+      if (!response.ok) throw new Error("Failed to load JSON");
+      return response.json();
+    })
+    .then(data => {
+      const container = document.getElementById(containerId);
+      data.forEach(project => {
+        const tags = project.tags.map(tag => `<span>${tag}</span>`).join(" ");
+        const html = isHome
+          ? `
+              <div class="project-item">
+                <div>
+                  <a href="${project.link}" target="blank">
+                    <h3>${project.title}</h3>
+                    <p>${project.shortDescription || project.description}</p>
+                  </a>
+                </div>
+                <div class="tags">${tags}</div>
+              </div>
+            `
+          : `
+              <div class="project">
+                <div class="project-image">
+                  <img src="${project.image}" alt="${project.alt || project.title}">
+                </div>
+                <div class="project-details">
+                  <h3>${project.title}</h3>
+                  <p>${project.description}</p>
+                  <div class="tags">${tags}</div>
+                  <a href="${project.link}" class="view-code">View Code</a>
+                </div>
+              </div>
+            `;
+        container.innerHTML += html;
+      });
+    })
+    .catch(error => console.error("Error loading project data:", error));
+}
 
-          <div class="project-image">
-            <img src="${project.image}" alt="${project.alt || project.title}">
-          </div>
-
-          <div class="project-details">
-            <h3>${project.title}</h3>
-            <p>${project.description}</p>
-            <div class="tags">
-              ${tags}
-            </div>
-            <a href="${project.link}" class="view-code">View Code</a>
-          </div>
-          
-        </div>
-      `;
-      container.innerHTML += projectHTML;
-    });
-  })
-  .catch(error => {
-    console.error("Error loading project data:", error);
-  });
+// Usage
+loadProjects('projects.json', 'project-container');       // full project page
+loadProjects('projects.json', 'project-grid', true);      // home page
 
 
-  // on home page
-  fetch('projects.json')
-  .then(response => {
-    if (!response.ok) throw new Error("Failed to load JSON");
-    return response.json();
-  })
-  .then(data => {
-    const homeContainer = document.getElementById('project-grid');
-    data.forEach(project => {
-      const tags = project.tags.map(tag => `<span>${tag}</span>`).join(" ");
-      const homeProjectHTML = `
-        <div class="project-item">
-          <div>
-            <a href="${project.link}" target="blank">
-              <h3>${project.title}</h3>
-              <p>${project.shortDescription || project.description}</p>
-            </a>
-          </div>
-          <div class="tags">
-              ${tags}
-          </div>          
-        </div>
-      `;
-      homeContainer.innerHTML += homeProjectHTML;
-    });
-  })
-  .catch(error => {
-    console.error("Error loading project data:", error);
-  });
