@@ -44,8 +44,8 @@ function loadProjects(jsonPath, containerId, isHome = false) {
             `
           : `
               <div class="project">
-                <div class="project-image">
-                  <img src="${project.image}" alt="${project.alt || project.title}">
+                <div class="project-image-container">
+                  <img class="project-image" src="${project.image}" alt="${project.alt || project.title}">
                 </div>
                 <div class="project-details">
                   <h3>${project.title}</h3>
@@ -56,6 +56,36 @@ function loadProjects(jsonPath, containerId, isHome = false) {
               </div>
             `;
         container.innerHTML += html;
+      });
+    
+      // Waiting for images to load, then average colour is calculated
+      const images = container.querySelectorAll(".project-image");
+      images.forEach(img => {
+        img.addEventListener("load", () => {
+          const canvas = document.createElement("canvas");
+          const ctx = canvas.getContext("2d");
+          canvas.width = img.naturalWidth;
+          canvas.height = img.naturalHeight;
+          ctx.drawImage(img, 0, 0);
+
+          const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height).data;
+          let r = 0, g = 0, b = 0, count = 0;
+
+          // Sampling every 10th pixel to save performance
+          for (let i = 0; i < imageData.length; i += 40) {
+            r += imageData[i];
+            g += imageData[i + 1];
+            b += imageData[i + 2];
+            count++;
+          }
+
+          r = Math.floor(r / count);
+          g = Math.floor(g / count);
+          b = Math.floor(b / count);
+
+          const avgColor = `rgb(${r}, ${g}, ${b})`;
+          img.parentElement.style.backgroundColor = avgColor;
+        });
       });
     })
     .catch(error => console.error("Error loading project data:", error));
