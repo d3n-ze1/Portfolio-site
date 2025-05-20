@@ -51,7 +51,7 @@ function loadProjects(jsonPath, containerId, isHome = false) {
                   <h3>${project.title}</h3>
                   <p>${project.description}</p>
                   <div class="tags">${tags}</div>
-                  <a href="${project.link}" class="view-code">View Code</a>
+                  <a href="${project.link}" class="view-code" target='_blank'>${project.buttonText}</a>
                 </div>
               </div>
             `;
