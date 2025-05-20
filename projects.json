@@ -5,20 +5,24 @@
       "shortDescription": "A Blender addon that provides a quick and easy way to set render resolution presets for different screen ratios.",
       "tags": ["Python", "Blender", "Blender Addon"],
       "image": "imgs/blenderrender.png",
-      "link": "https://github.com/d3n-ze1/blender-render-utils"
+      "link": "https://github.com/d3n-ze1/blender-render-utils",
+      "buttonText": "View Code"
     },
     {
       "title": "Portfolio Site",
       "description": "A static page that showcases my latest projects. Built using HTML, CSS, and JavaScript.",
       "tags": ["JavaScript", "CSS", "HTML"],
       "image": "imgs/ilya-pavlov-OqtafYT5kTw-unsplash.jpg",
-      "link": "https://github.com/d3n-ze1/Portfolio-site"
+      "link": "https://github.com/d3n-ze1/Portfolio-site",
+      "buttonText": "View Code"
     },
     {
       "title": "Summer Research @ Vertex Lab",
-      "description": "Research focus: How Users Interact with 3D Virtual Spaces and How UI Design Influences Perception",
+      "description": "I was awarded an Undergraduate Student Research Award (USRA) by the Facultyof Coputer Science and the Imhotep Legacy Academy. My Research looks at \"How UsersInteract with 3D Virtual Spaces and How UI Design Influences Perception\"",
+      "shortDescription": "Research focus: How Users Interact with 3D Virtual Spaces and How UI Design Influences Perception",
       "tags": ["Unity", "C#", "XR", "HCI", "3D UI/UX" ],
       "image": "https://vertexlab.ca/images/logo2.png",
-      "link": "https://vertexlab.ca/index.html"
+      "link": "https://vertexlab.ca/index.html",
+      "buttonText": "Visit Lab Website"
     }
   ]
