@@ -306,7 +306,8 @@ main{
 
 /* Footer */
 footer {
-    /* display: flex; */
+    position: relative;
+    /* bottom: 0; */
     justify-content: center;
     background-color: light-dark(var(--primary), var(--dark-primary));
     color: light-dark(var(--light-alt-text), var(--dark-alt-text));
