@@ -20,7 +20,7 @@
       "title": "Summer Research @ Vertex Lab",
       "description": "I was awarded an Undergraduate Student Research Award (USRA) by the Faculty of Computer Science and the Imhotep Legacy Academy. <strong>My Research looks at \"How Users Interact with 3D Virtual Spaces and How UI Design Influences Perception\"</strong>",
       "shortDescription": "ILA-USRA research on user interaction and perception in 3D virtual spaces.",
-      "tags": ["Unity", "C#", "XR", "HCI Research", "3D UI/UX", "Undergrad Research" ],
+      "tags": ["Unity", "C#", "XR", "HCI Research", "3D UI/UX" ],
       "image": "https://vertexlab.ca/images/logo2.png",
       "link": "https://vertexlab.ca/index.html",
       "buttonText": "Visit Lab Website"
