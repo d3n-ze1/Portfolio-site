@@ -1,5 +1,15 @@
 [
     {
+      "title": "Nia: A Black Youth Led Summit",
+      "description": "An empowering summit organized by and for Black youth, focusing on leadership, community engagement, cultural celebration, and creating spaces for Black voices to thrive.",
+      "shortDescription": "A youth-led summit fostering Black leadership, empowerment, and community connection.",
+      "tags": ["Leadership", "Youth Empowerment", "Community Engagement", "Social Justice"],
+      "image": "imgs/nia-summit-logo.jpg",
+      "alt": "Nia Summit logo",
+      "link": "https://bccns.com/wp-content/uploads/2023/09/NIA-Summit-Program-WEB.pdf",
+      "buttonText": "Learn More"
+    },
+    {
       "title": "Blender Render Utilities - A Blender addon",
       "description": "A Blender addon that provides quick access to resolution presets for different screen ratios and platforms. This tool simplifies setting up render resolutions for social media content, filmmaking, and custom aspect ratios, making it easier for creators to maintain consistency across various formats.",
       "shortDescription": "A Blender addon that provides a quick and easy way to set render resolution presets for different screen ratios.",
