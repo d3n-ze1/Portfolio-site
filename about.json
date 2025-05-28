@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Programming Languages",
+        "tags": ["Java", "HTML", "JavaScript", "Python", "CSS"]
+    },
+    {
+        "title": "Management & Leadership",
+        "tags": ["Team Leadership", "Communtiy Engagement", "Cybersecurity"]
+    },
+    {
+        "title": "Software & Tools",
+        "tags": ["Blender", "Adobe Creative Suite", "Microsoft Office", "Unity", "Davinci Resolve", "Visual Studio Code"]
+    },
+    {
+        "title": "IT & Security",
+        "tags": ["Cybersecurity", "Fraud Prevention", "JavaScript", "Python", "CSS"]
+    },
+    {
+        "title": "Other Skills",
+        "tags": ["Media Production", "Videography", "3D Visualization", "Graphic Design", "Research Skills"]
+    }
+
+]
