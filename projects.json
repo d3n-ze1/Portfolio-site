@@ -27,7 +27,7 @@
     },
     {
       "title": "areYouLate() — A Python-Powered Transit Assistant",
-      "description": "A Python console-based assistant that decodes GTFS (General Transit Feed Specification) data to provide live bus arrivals, real-time vehicle locations, service alerts, and neares stop information. Built as a personal milestone project to apply programming, systems, and web data skills from first-year Applied Computer Science at Dalhousie University.",
+      "description": "A Python console-based assistant that decodes GTFS (General Transit Feed Specification) data to provide live bus arrivals, real-time vehicle locations, service alerts, and nearest stop information. Built as a personal milestone project to apply programming, systems, and web data skills from first-year Applied Computer Science at Dalhousie University.",
       "shortDescription": "A Python assistant to check live bus arrivals, locations, and service alerts using GTFS data.",
       "tags": ["Python", "GTFS", "Transit Data", "API Integration", "Real-Time Data"],
       "image": "",
