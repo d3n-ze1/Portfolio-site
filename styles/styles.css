@@ -40,12 +40,19 @@ main{
     text-align: center;
 }
 
+header{
+    /* position: sticky;
+    top: 0; */
+    
+}
 .top-bar{
+
     display: grid;
     grid-template-columns: 2fr 1fr;
     margin: 0;
     padding: 10px;
     background-color: light-dark(var(--primary), var(--dark-primary));
+    
 }
 
 .navigation{
@@ -122,7 +129,7 @@ main{
     align-items: center;
     justify-items: center;
     background-color: light-dark(var(--primary), var(--dark-primary));
-    color: light-dark(var(--light-text), var(--dark-text));
+    color: var(--dark-text);
     overflow: auto;
 }
 
@@ -143,7 +150,6 @@ main{
 /* Projects Section */
 #projects {
     padding: 40px;
-    /* background-color: var(--items); */
     overflow: auto;
 }
 
@@ -157,16 +163,16 @@ main{
 .project-item {
     display: grid;
     grid-template-rows: 2fr auto;
-    background-color: light-dark(var(--items), var(--dark-items));
+    background-color: light-dark(var(--dark-secondary), var(--secondary)); 
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 3px 3px 7px light-dark(var(--accent), var(--dark-accent));
+    box-shadow: 5px 5px 10px light-dark(var(--accent), var(--dark-accent));
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project-item a {
     text-decoration: none;
-    color: light-dark(var(--light-text), var(--dark-text));
+    color: light-dark(var(--dark-text), var(--light-text));
 }
 
 .project-item:hover {
@@ -199,7 +205,7 @@ main{
     align-items: center;
     background: light-dark(var(--dark-secondary), var(--secondary)); 
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 35px;
     gap: 40px;
     margin-top: 20px;
     color: light-dark(var(--light-alt-text), var(--dark-alt-text));
@@ -210,7 +216,7 @@ main{
     max-width: 300px;
     min-height: 180px;
     background: #e2e2ec; /* Placeholder bg */
-    border-radius: 10px;
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -219,7 +225,7 @@ main{
 .project-image{
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .project-details {
@@ -239,7 +245,6 @@ main{
 .tags {
     display: flex;
     flex-wrap: wrap;
-    
 }
 
 .tags span {
@@ -249,7 +254,7 @@ main{
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 0.9rem;
-    margin: 0 5px 10px 5px; /* top, right, bottom, left */
+    margin: 0 5px 10px 5px;
 }
 
 .view-code {
@@ -267,23 +272,26 @@ main{
 }
 
 #search-bar {
-    width: 100%;
-    max-width: 475px;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 3px solid light-dark(var(--accent), var(--dark-accent));
-    border-radius: 5px;
-    box-shadow: 5px 8px 15px light-dark(var(--accent), var(--dark-accent));
-    font-size: 1rem;
-    background: light-dark(var(--items), var(--dark-items));
-    color: light-dark(var(--light-text), var(--dark-text));
     position: sticky;
     top: 20px;
+    width: 100%;
+    max-width: 475px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    color: pink;
+    border: 3px solid light-dark(var(--accent), var(--dark-accent));
+    box-shadow: 5px 8px 15px light-dark(var(--accent), var(--dark-accent));
+    background: light-dark(var(--items), var(--dark-items)) / 50%;
+    backdrop-filter: blur(100px);  
+    
+
 }
 
 .skill-grid {
     display: grid;
-    /* grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr 1fr)); */
+    grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr 1fr));
     padding: 2rem;
     max-width: 1200px;
     margin: 0 auto;
@@ -315,12 +323,10 @@ footer {
     padding: 20px 40px;
     text-align: center;
     margin: 0;
-
 }
   
 .left-footer-div{
     display: grid;
-
 }
 
 .right-footer-div{
