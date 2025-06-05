@@ -91,8 +91,79 @@ function loadProjects(jsonPath, containerId, isHome = false) {
     .catch(error => console.error("Error loading project data:", error));
 }
 
+// function loadAbout(jsonPath){
+//   fetch(jsonPath)
+//     .then(response => {
+//       if (!response.ok) throw new Error("Failed to load JSON");
+//       return response.json();
+//     })
+//     .then(data => {
+//       const skillGrid = document.querySelector('.skill-grid');
+//       skillGrid.innerHTML = ''; // Clear existing
+
+//       data.categories.forEach(category => {
+//           const skillItem = document.createElement('div');
+//           skillItem.classList.add('skill-item');
+
+//           const title = document.createElement('h2');
+//           title.textContent = category.title;
+//           skillItem.appendChild(title);
+
+//           const tagContainer = document.createElement('div');
+//           tagContainer.classList.add('tags');
+
+//           if (category.tags) {
+//               category.tags.forEach(tag => {
+//                   const tagSpan = document.createElement('span');
+//                   tagSpan.textContent = tag;
+//                   tagContainer.appendChild(tagSpan);
+//               });
+//           }
+
+//           if (category.subcategories) {
+//               category.subcategories.forEach(sub => {
+//                   const subTitle = document.createElement('h3');
+//                   subTitle.textContent = sub.title;
+//                   tagContainer.appendChild(subTitle);
+
+//                   if (sub.tags) {
+//                       sub.tags.forEach(tag => {
+//                           const tagSpan = document.createElement('span');
+//                           tagSpan.textContent = tag;
+//                           tagContainer.appendChild(tagSpan);
+//                       });
+//                   }
+
+//                   if (sub.link) {
+//                       const linkA = document.createElement('a');
+//                       linkA.href = sub.link;
+//                       linkA.textContent = 'Read more';
+//                       linkA.classList.add('view-code');
+//                       linkA.target = '_blank';
+//                       tagContainer.appendChild(linkA);
+//                   }
+//               });
+//           }
+
+//           skillItem.appendChild(tagContainer);
+//       skillGrid.appendChild(skillItem);
+//   });
+// })
+// .catch(error => console.error("Error loading about data:", error));
+
+// }
+
 // Usage
-loadProjects('projects.json', 'project-container');       // full project page
-loadProjects('projects.json', 'project-grid', true);      // home page
+if (document.getElementById('project-container')) {
+    loadProjects('projects.json', 'project-container'); // full project page
+}
+
+if (document.getElementById('project-grid')) {
+    loadProjects('projects.json', 'project-grid', true); // home page
+}
+
+// if (document.querySelector('.skill-grid')) {
+//     loadAbout('about.json');
+// }
 
 
