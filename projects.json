@@ -1,14 +1,26 @@
 [
+
     {
-      "title": "Nia: A Black Youth Led Summit",
-      "description": "An empowering summit organized by and for Black youth, focusing on leadership, community engagement, cultural celebration, and creating spaces for Black voices to thrive.",
-      "shortDescription": "A youth-led summit fostering Black leadership, empowerment, and community connection.",
-      "tags": ["Leadership", "Youth Empowerment", "Community Engagement", "Social Justice"],
-      "image": "imgs/nia-summit-logo.jpg",
-      "alt": "Nia Summit logo",
-      "link": "https://bccns.com/wp-content/uploads/2023/09/NIA-Summit-Program-WEB.pdf",
-      "buttonText": "Learn More"
+      "title": "areYouLate() — A Python-Powered Transit Assistant",
+      "description": "A <strong>Python console-based assistant</strong> that decodes GTFS (General Transit Feed Specification) data to provide live bus arrivals, real-time vehicle locations, service alerts, and nearest stop information. Built as a personal milestone project to apply programming, systems, and web data skills from first-year Applied Computer Science at Dalhousie University.",
+      "shortDescription": "A Python assistant to check live bus arrivals, locations, and service alerts using GTFS data.",
+      "tags": ["Python", "GTFS", "Transit Data", "Real-Time Data"],
+      "image":  "imgs/chuttersnap-ywDi4b-z5fw-unsplash.jpg",
+      "alt": "A bus speeding to its destination",
+      "link": "https://github.com/d3n-ze1/areYouLate",
+      "buttonText": "View Code"
     },
+    
+    {
+      "title": "Portfolio Site",
+      "description": "A static page that showcases my latest projects. Built using HTML, CSS, and JavaScript.",
+      "tags": ["JavaScript", "CSS", "HTML"],
+      "image": "imgs/ilya-pavlov-OqtafYT5kTw-unsplash.jpg",
+      "alt": "An image of a computer screen with code",
+      "link": "https://github.com/d3n-ze1/Portfolio-site",
+      "buttonText": "View Code"
+    },
+    
     {
       "title": "Blender Render Utilities - A Blender addon",
       "description": "A Blender addon that provides quick access to resolution presets for different screen ratios and platforms. This tool simplifies setting up render resolutions for social media content, filmmaking, and custom aspect ratios, making it easier for creators to maintain consistency across various formats.",
@@ -19,15 +31,7 @@
       "link": "https://github.com/d3n-ze1/blender-render-utils",
       "buttonText": "View Code"
     },
-    {
-      "title": "Portfolio Site",
-      "description": "A static page that showcases my latest projects. Built using HTML, CSS, and JavaScript.",
-      "tags": ["JavaScript", "CSS", "HTML"],
-      "image": "imgs/ilya-pavlov-OqtafYT5kTw-unsplash.jpg",
-      "alt": "An image of a computer screen with code",
-      "link": "https://github.com/d3n-ze1/Portfolio-site",
-      "buttonText": "View Code"
-    },
+
     {
       "title": "Summer Research @ Vertex Lab",
       "description": "I was awarded an Undergraduate Student Research Award (USRA) by the Faculty of Computer Science and the Imhotep Legacy Academy. <strong>My Research looks at \"How Users Interact with 3D Virtual Spaces and How UI Design Influences Perception\"</strong>",
@@ -39,13 +43,13 @@
       "buttonText": "Visit Lab Website"
     },
     {
-      "title": "areYouLate() — A Python-Powered Transit Assistant",
-      "description": "A <strong>Python console-based assistant</strong> that decodes GTFS (General Transit Feed Specification) data to provide live bus arrivals, real-time vehicle locations, service alerts, and nearest stop information. Built as a personal milestone project to apply programming, systems, and web data skills from first-year Applied Computer Science at Dalhousie University.",
-      "shortDescription": "A Python assistant to check live bus arrivals, locations, and service alerts using GTFS data.",
-      "tags": ["Python", "GTFS", "Transit Data", "Real-Time Data"],
-      "image":  "imgs/chuttersnap-ywDi4b-z5fw-unsplash.jpg",
-      "alt": "A bus speeding to its destination",
-      "link": "https://github.com/d3n-ze1/areYouLate",
-      "buttonText": "View Code"
+      "title": "Nia: A Black Youth Led Summit",
+      "description": "An empowering summit organized by and for Black youth, focusing on leadership, community engagement, cultural celebration, and creating spaces for Black voices to thrive.",
+      "shortDescription": "A youth-led summit fostering Black leadership, empowerment, and community connection.",
+      "tags": ["Leadership", "Youth Empowerment", "Community Engagement", "Social Justice"],
+      "image": "imgs/nia-summit-logo.jpg",
+      "alt": "Nia Summit logo",
+      "link": "https://bccns.com/wp-content/uploads/2023/09/NIA-Summit-Program-WEB.pdf",
+      "buttonText": "Learn More"
     }
   ]
