@@ -1,23 +1,76 @@
-[
-    {
-        "title": "Programming Languages",
-        "tags": ["Java", "HTML", "JavaScript", "Python", "CSS"]
-    },
-    {
-        "title": "Management & Leadership",
-        "tags": ["Team Leadership", "Communtiy Engagement", "Cybersecurity"]
-    },
-    {
-        "title": "Software & Tools",
-        "tags": ["Blender", "Adobe Creative Suite", "Microsoft Office", "Unity", "Davinci Resolve", "Visual Studio Code"]
-    },
-    {
-        "title": "IT & Security",
-        "tags": ["Cybersecurity", "Fraud Prevention", "JavaScript", "Python", "CSS"]
-    },
-    {
-        "title": "Other Skills",
-        "tags": ["Media Production", "Videography", "3D Visualization", "Graphic Design", "Research Skills"]
-    }
-
-]
+{
+    "categories": [
+        {
+            "title": "Education",
+            "items": ["Bachelor of Applied Computer Science, Dalhousie University (2024–2028)"]
+        },
+        {
+            "title": "Professional Experience",
+            "items": [
+                "Summer Student Researcher, Vertex Lab (ILA USRA)",
+                "Cycling Ambassador, Halifax Cycling Coalition (Clean Leadership Summer Internships)",
+                "Clean Energy Intern, Government of Nova Scotia (Natural Resources and Renewables)"
+            ]
+        },
+        {
+            "title": "Press",
+            "subcategories": [
+                {
+                    "title": "2023 Human Rights Award Recipients Honoured",
+                    "link": "https://humanrights.novascotia.ca/news-events/news/2023/2023-human-rights-award-recipients-honoured"
+                },
+                {
+                    "title": "Nia Summit centres voices of Black Nova Scotian youth",
+                    "link": "https://www.thecoast.ca/news-opinion/nia-summit-centres-voices-of-black-nova-scotian-youth-31566447"
+                }
+            ]
+        },
+        {
+            "title": "Awards",
+            "items": [
+                "Nova Scotia Human Rights Commission Youth Award",
+                "Dalhousie WeAreAllCS African Descent Entrance Scholarship",
+                "ILA-USR Award, Dalhousie University"
+            ]
+        },
+        {
+            "title": "Licenses & Certifications",
+            "tags": [
+                "Practical Cybersecurity"
+            ]
+        },
+        {
+            "title": "Management & Leadership",
+            "tags": ["Team Leadership", "Community Engagement", "Cybersecurity", "Youth Empowerment"]
+        },
+        {
+            "title": "Technical Proficiencies",
+            "subcategories": [
+                {
+                    "title": "Programming Languages",
+                    "tags": ["Java", "HTML", "JavaScript", "Python"]
+                },
+                {
+                    "title": "Applications",
+                    "tags": ["Blender", "Photoshop", "Microsoft Office", "Davinci Resolve"]
+                },
+                {
+                    "title": "Development Tools",
+                    "tags": ["GitHub", "WordPress", "Unity", "PyCharm / IntelliJ IDEA", "Visual Studio Code", "Figma"]
+                },
+                {
+                    "title": "IT & Security",
+                    "tags": ["Cybersecurity", "Fraud Prevention"]
+                }
+            ]
+        },
+        {
+            "title": "Other Skills",
+            "tags": ["Media Production", "Videography", "3D Visualization", "Graphic Design", "Research Skills", "Unconscious Bias Awareness", "Microaggression Identification & Addressal"]
+        },
+        {
+            "title": "Languages",
+            "tags": ["Igbo", "English"]
+        }
+    ]
+}
