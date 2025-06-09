@@ -162,17 +162,22 @@ header{
 
 .project-item {
     display: grid;
-    grid-template-rows: 2fr auto;
+    grid-template-rows: minmax(20px, 70px) 1fr auto;
     background-color: light-dark(var(--dark-secondary), var(--secondary)); 
     border-radius: 10px;
     padding: 20px;
+    gap: 10px;
     box-shadow: 5px 5px 10px light-dark(var(--accent), var(--dark-accent));
     transition: transform 0.3s, box-shadow 0.3s;
+    
+    color: light-dark(var(--dark-text), var(--light-text));
+
 }
 
 .project-item a {
     text-decoration: none;
     color: light-dark(var(--dark-text), var(--light-text));
+    
 }
 
 .project-item:hover {
