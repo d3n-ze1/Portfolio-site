@@ -36,8 +36,11 @@ function loadProjects(jsonPath, containerId, isHome = false) {
                 <div>
                   <a href="${project.link}" target="blank">
                     <h3>${project.title}</h3>
-                    <p>${project.shortDescription || project.description}</p>
                   </a>
+                </div>
+                <div>
+                    <p>${project.shortDescription || project.description}</p>
+                  
                 </div>
                 <div class="tags">${tags}</div>
               </div>
