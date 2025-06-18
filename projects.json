@@ -2,7 +2,7 @@
 
     {
       "title": "areYouLate() — A Python-Powered Transit Assistant",
-      "description": "A <strong>Python console-based assistant</strong> that decodes GTFS (General Transit Feed Specification) data to provide live bus arrivals, real-time vehicle locations, service alerts, and nearest stop information. Built as a personal milestone project to apply programming, systems, and web data skills from first-year Applied Computer Science at Dalhousie University.",
+      "description": "A <strong>Python console-based assistant</strong> that decodes GTFS (General Transit Feed Specification) data to provide live bus arrivals, real-time vehicle locations, service alerts. Built as a personal milestone project to apply programming skills from first-year Computer Science at Dalhousie University.",
       "shortDescription": "A Python assistant to check live bus arrivals, locations, and service alerts using GTFS data.",
       "tags": ["Python", "GTFS", "Transit Data", "Real-Time Data"],
       "image":  "imgs/chuttersnap-ywDi4b-z5fw-unsplash.jpg",
@@ -13,7 +13,7 @@
     
     {
       "title": "Portfolio Site",
-      "description": "A static page that showcases my latest projects. Built using HTML, CSS, and JavaScript.",
+      "description": "A static page showcasing my latest projects. Built using HTML, CSS, and JavaScript.",
       "tags": ["JavaScript", "CSS", "HTML"],
       "image": "imgs/ilya-pavlov-OqtafYT5kTw-unsplash.jpg",
       "alt": "An image of a computer screen with code",
@@ -23,8 +23,8 @@
     
     {
       "title": "Blender Render Utilities - A Blender addon",
-      "description": "A Blender addon that provides quick access to resolution presets for different screen ratios and platforms. This tool simplifies setting up render resolutions for social media content, filmmaking, and custom aspect ratios, making it easier for creators to maintain consistency across various formats.",
-      "shortDescription": "A Blender addon that provides a quick and easy way to set render resolution presets for different screen ratios.",
+      "description": "An addon that provides quick access to resolution presets for popular screen ratios. It tool simplifies setting up render resolutions for social media content, filmmaking, and custom aspect ratios, making it easier for creators to maintain consistency across various formats.",
+      "shortDescription": "An addon that simplifies setting up render resolutions for different screen ratios.",
       "tags": ["Python", "Blender", "Blender Addon"],
       "image": "imgs/blenderrender.png",
       "alt": "A 3d render of a car on a bridge at sunset",
@@ -34,8 +34,8 @@
 
     {
       "title": "Summer Research @ Vertex Lab",
-      "description": "I was awarded an Undergraduate Student Research Award (USRA) by the Faculty of Computer Science and the Imhotep Legacy Academy. <strong>My Research looks at \"How Users Interact with 3D Virtual Spaces and How UI Design Influences Perception\"</strong>",
-      "shortDescription": "ILA-USRA research on user interaction and perception in 3D virtual spaces.",
+      "description": "Research funded by an Undergraduate Student Research Award (USRA) from the Faculty of Computer Science and the Imhotep Legacy Academy. <strong>My Research looks at \"How Users Interact with 3D Virtual Spaces and How UI Design Influences Perception\"</strong>",
+      "shortDescription": "Undergraduate student research on user interaction and perception in 3D virtual spaces.",
       "tags": ["Unity", "C#", "XR", "HCI Research", "3D UI/UX" ],
       "image": "https://vertexlab.ca/images/logo2.png",
       "alt": "Vertex Lab's Logo",
