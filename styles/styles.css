@@ -40,10 +40,6 @@ main{
     text-align: center;
 }
 
-header{
-    /* position: sticky;
-    top: 0; */ 
-}
 .top-bar{
 
     display: grid;
@@ -51,14 +47,12 @@ header{
     margin: 0;
     padding: 10px;
     background-color: light-dark(var(--primary), var(--dark-primary));
-    
 }
 
 .navigation{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* padding: 10px; */
     background-color: rgb(116, 21, 21);
 }
 
@@ -136,7 +130,6 @@ header{
     padding-right: 10px;
     text-align: justify;
     font-size: 1.3em;
-
 }
 
 #headshot{
@@ -167,17 +160,12 @@ header{
     gap: 10px;
     box-shadow: 5px 5px 10px light-dark(var(--accent), var(--dark-accent));
     transition: transform 0.3s, box-shadow 0.3s;
-    
     color: light-dark(var(--dark-text), var(--light-text));
-
-    
-
 }
 
 .project-item a {
     text-decoration: none;
     color: light-dark(var(--dark-text), var(--light-text));
-    
 }
 
 .project-item:hover {
@@ -215,7 +203,6 @@ header{
     gap: 40px;
     margin-top: 20px;
     color: light-dark(var(--light-alt-text), var(--dark-alt-text));
-    
 }
 
 .project-image-container {
@@ -237,7 +224,6 @@ header{
 
 .project-details {
     flex: 2;
-    
 }
 
 .project-details h3 {
@@ -263,7 +249,6 @@ header{
     border-radius: 5px;
     font-size: 0.9rem;
     margin: 0 5px 10px 5px;
-    
 }
 
 .view-code {
@@ -289,7 +274,6 @@ header{
     padding: 10px;
     font-size: 1rem;
     border-radius: 5px;
-
     border: 1.2px solid rgba(255, 255, 255, 0.6);
     box-shadow: 5px 5px 15px light-dark(var(--accent), var(--dark-accent));
     backdrop-filter: blur(10px);
@@ -323,7 +307,6 @@ header{
     padding: 1rem;
     box-shadow: 0px 0px 5px light-dark(var(--dark-background), var(--background));
 }
-
 
 /* Footer */
 footer {
@@ -364,14 +347,12 @@ footer a:hover {
 
 
 
-
-
 /* mobile */
 @media (max-width: 767px) {
 
     header{
-    position: sticky;
-    top: 0; 
+        position: sticky;
+        top: 0; 
     }
 
     .top-bar{
@@ -388,7 +369,6 @@ footer a:hover {
         gap: 10px;
         padding: 10px;
         justify-items: center;
-
     }
 
     #headshot{
