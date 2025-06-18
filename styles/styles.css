@@ -419,7 +419,8 @@ footer a:hover {
         flex-direction: column;
         text-align: center;
         overflow: auto;
-        padding: 40px 70px;
+        padding: 40px;
+        width: 80%;
     }
     
     .project-image {
