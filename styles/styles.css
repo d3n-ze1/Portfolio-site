@@ -172,6 +172,8 @@ header{
     
     color: light-dark(var(--dark-text), var(--light-text));
 
+    
+
 }
 
 .project-item a {
@@ -201,8 +203,9 @@ header{
 }
 
 #project-container h2 {
-    font-size: 2rem;
+    font-size: 3.5rem;
     font-weight: bold;
+    margin: 0px, 20px;
 }
 
 .project {
@@ -214,6 +217,7 @@ header{
     gap: 40px;
     margin-top: 20px;
     color: light-dark(var(--light-alt-text), var(--dark-alt-text));
+    
 }
 
 .project-image-container {
@@ -235,10 +239,11 @@ header{
 
 .project-details {
     flex: 2;
+    
 }
 
 .project-details h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 
@@ -260,6 +265,7 @@ header{
     border-radius: 5px;
     font-size: 0.9rem;
     margin: 0 5px 10px 5px;
+    
 }
 
 .view-code {
@@ -285,14 +291,20 @@ header{
     padding: 10px;
     font-size: 1rem;
     border-radius: 5px;
-    color: pink;
-    border: 3px solid light-dark(var(--accent), var(--dark-accent));
-    box-shadow: 5px 8px 15px light-dark(var(--accent), var(--dark-accent));
-    background: light-dark(var(--items), var(--dark-items)) / 50%;
-    backdrop-filter: blur(100px);  
-    
 
+    border: 1.2px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 5px 5px 15px light-dark(var(--accent), var(--dark-accent));
+    backdrop-filter: blur(10px);
+    background: linear-gradient(120deg, light-dark(var(--alt-items), var(--dark-alt-items)), rgba(255, 255, 255, 0.2));
+    -webkit-backdrop-filter: blur(10px);
+    color: light-dark(var(--light-text), var(--dark-text));
+    
 }
+#search-bar::placeholder{
+    color: light-dark(var(--light-text), var(--dark-text));
+    opacity: 0.6;
+}
+
 
 .skill-grid {
     display: grid;
