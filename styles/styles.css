@@ -134,8 +134,10 @@ main{
 
 #headshot{
     border: 5px solid light-dark(var(--accent), var(--dark-accent));
+    padding: 20px;
     margin: 20px;
     width: 300px;
+    background-color: #d89055;
 }
 
 /* Projects Section */
@@ -151,9 +153,15 @@ main{
     margin-top: 50px;
 }
 
+.home-project-title{
+    color: light-dark(var(--dark-text), var(--light-text));
+    font-size: 24px;
+    /* margin: 20px; */
+}
+
 .project-item {
     display: grid;
-    grid-template-rows: minmax(20px, 70px) 1fr auto;
+    grid-template-rows: minmax(10px, 100px) 1fr auto; 
     background-color: light-dark(var(--dark-secondary), var(--secondary)); 
     border-radius: 10px;
     padding: 20px;
@@ -165,11 +173,15 @@ main{
 
 .project-item a {
     text-decoration: none;
-    color: light-dark(var(--dark-text), var(--light-text));
+    
+}
+
+.project-item p {
+    font-size: 18px;    
 }
 
 .project-item:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
     box-shadow: 0px 0px 40px light-dark(var(--accent), var(--dark-accent));
 }
 
@@ -249,6 +261,7 @@ main{
     border-radius: 5px;
     font-size: 0.9rem;
     margin: 0 5px 10px 5px;
+    max-height: fit-content;
 }
 
 .view-code {
@@ -372,7 +385,9 @@ footer a:hover {
     }
 
     #headshot{
+        width: 75%;
         margin: 20px;
+        
     }
 
     .menu-toggle {
