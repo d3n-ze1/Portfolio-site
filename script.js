@@ -32,10 +32,10 @@ function loadProjects(jsonPath, containerId, isHome = false) {
         const tags = project.tags.map(tag => `<span>${tag}</span>`).join(" ");
         const html = isHome
           ? `
-              <div class="project-item">
+            <div class="project-item">
                 <div>
                   <a href="${project.link}" target="blank">
-                    <h3>${project.title}</h3>
+                    <h3 class="home-project-title">${project.title}</h3>
                   </a>
                 </div>
                 <div>
